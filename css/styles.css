@@ -1,5 +1,24 @@
+@import url(fonts.css);
+@import url(searchBar.css);
+
+:root {
+    --accent: #186efd60;
+    --bg: #1e1f21;
+    --sbg: #2c2d31;
+    --dateNother: #A3A9B4;
+    --fg:  #e4e6e6;
+    --colorSB :  rgba(228,230,230,0);
+}
+
 body {
-    background-color: #2a2a2e;
+    background-color: var(--bg);
+    font-family: "Open Sans", serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 #content {
@@ -9,12 +28,79 @@ body {
     align-items: center;
 }
 
-#logoFirefox {
-    height: 96px;
+/* Date and time */
+
+#dateAndTime {
+    height: fit-content;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dateNother);
 }
 
-#searchImg {
-    height: auto;
-    width: 24px;
+#dateAndTime > * {
+    height: fit-content;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
 }
+
+#currentTime {
+    font-size: 125px;
+    font-weight: bolder;
+}
+
+#currentDate {
+    font-size: 32px;
+}
+
+/* Search Bar */
+#search form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+#search:hover {
+    cursor: pointer;
+}
+
+#searchIcon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dateNother);
+    border-radius: 50%;
+}
+
+#imgLoupe {
+    height: 100%;
+    width: 100%;
+}
+
+#searchBar{
+    font-family: Inconsolata, serif;
+    background-color: var(--colorSB);
+    color: var(--dateNother);
+    border-radius: 25px;
+    padding-left: 10px;
+    width: 500px;
+    height: 30px;
+}
+
+#search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
+
+
+
