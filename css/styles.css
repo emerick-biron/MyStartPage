@@ -1,5 +1,5 @@
 /*noinspection CssUnknownTarget*/
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans&display=swap');
 @import url(searchBar.css);
 
 :root {
@@ -85,6 +85,7 @@ body {
 
 #searchBar{
     font-family: Inconsolata, serif;
+    font-weight: bold;
     background-color: var(--colorSB);
     color: var(--dateNother);
     border-radius: 25px;
